@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Simon Game</title>
+</head>
+
+<body>
+    <!-- Title Section -->
+    <section id="title">
+        <div class="container">
+            <div class="title-text">Press any key to start the game</div>
+        </div>
+    </section>
+
+    <!-- Simon Game Section -->
+    <section id="simon">
+        <div class="container">
+            <div class="row">
+                <div type="button" id="green" class="box green"> </div>
+                <div type="button" id="red" class="box red"></div>
+            </div>
+            <div class="row">
+                <div type="button" id="yellow" class="box yellow"> </div>
+                <div type="button" id="blue" class="box blue"></div>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- External Script -->
+    <script src="game.js"></script>
+</body>
+
+</html>
