@@ -15,7 +15,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <title>Simon Game</title>
@@ -23,22 +23,21 @@
 
 <body>
     <!-- Title Section -->
-    <section id="title">
+    <section class="title">
         <div class="container">
-            <div class="title-text">Press any key to start the game</div>
+            <div class="text">Press any key to start the game.</div>
         </div>
     </section>
-
     <!-- Simon Game Section -->
-    <section id="simon">
+    <section class="simon">
         <div class="container">
             <div class="row">
-                <div type="button" id="green" class="box green"> </div>
-                <div type="button" id="red" class="box red"></div>
+                <div class="btn" id="green"></div>
+                <div class="btn" id="red"></div>
             </div>
             <div class="row">
-                <div type="button" id="yellow" class="box yellow"> </div>
-                <div type="button" id="blue" class="box blue"></div>
+                <div class="btn" id="yellow"></div>
+                <div class="btn" id="blue"></div>
             </div>
         </div>
     </section>

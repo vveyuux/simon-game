@@ -1,67 +1,99 @@
+/* Initial Settings */
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-align: center;
 }
 
 body {
-    background-color: #2C3333;
+    background-color: rgb(34, 40, 49);
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
 }
 
-/* Google Fonts */
-/* font-family: 'Fredoka One', cursive; */
-
-/* Title  Section */
-
-#title {
-    font-family: 'Fredoka One', cursive;
-    color: #E7F6F2;
-}
+/* Container */
 
 .container {
-    padding: 1% 15% 0;
+    padding: 3% 15% 1.5%;
 }
 
-.title-text {
-    font-size: 4rem;
+/* Title Section */
+
+.text {
+    color: #EEEEEE;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2.5px 2.5px 0 #4F8A8B, 5px 5px 0 #4F8A8B;
 }
 
-/* Simon Section */
-#simon .container {
-    padding-top: 2%;
-    margin: 0 auto;
-}
+/* Simon Game Section */
 
-/* Button Box */
-
-.box {
-    cursor: pointer;
-    margin: 5px;
+.btn {
+    width: 200px;
+    height: 200px;
     display: inline-block;
-    width: 250px;
-    height: 250px;
+    margin: 1%;
+    border: 5px solid #EEEEEE;
     border-radius: 20px;
-    border: #3F4E4F solid 5px;
-    transition: all 0.1s;
 }
+
+/* Pressed Button */
 
 .pressed {
-    box-shadow: 0 0 15px #E7F6F2;
+    opacity: 0.5;
+    box-shadow: 0 0 20px #EEEEEE;
 }
 
-.box.green {
-    background-color: #BCE29E;
+.game-over {
+    background-color: #DC0000;
 }
 
-.box.red {
-    background-color: #FD8A8A;
+/* Color Button */
+
+.btn#green {
+    background-color: #4F8A8B;
 }
 
-.box.yellow {
-    background-color: #FDFDBD;
+.btn#red {
+    background-color: #D61355;
 }
 
-.box.blue {
-    background-color: #7286D3;
+.btn#yellow {
+    background-color: #FBD46D;
+}
+
+.btn#blue {
+    background-color: #0F6292;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1025px) {
+    .btn {
+        width: 300px;
+        height: 300px;
+    }
+
+    .text {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    .btn {
+        width: 125px;
+        height: 125px;
+    }
+
+    .text {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .btn {
+        width: 120px;
+        height: 120px;
+    }
 }
