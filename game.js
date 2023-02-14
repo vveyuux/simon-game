@@ -29,7 +29,7 @@ $(".btn").click(function () {
   checkClicked(userClickedPattern.length - 1);
 });
 
-const gameOver = function () {
+const gameOver = () => {
   $(".text").text("GAME OVER!!, press any key to restart.");
   $("body").addClass("game-over");
   setTimeout(() => {
@@ -37,7 +37,7 @@ const gameOver = function () {
   }, 500);
 };
 
-const checkClicked = function (currLevel) {
+const checkClicked = (currLevel) => {
   if (userClickedPattern[currLevel] === gamePattern[currLevel]) {
     if (userClickedPattern.length === gamePattern.length) {
       setTimeout(() => {
@@ -51,7 +51,7 @@ const checkClicked = function (currLevel) {
   }
 };
 
-const nextLevel = function () {
+const nextLevel = () => {
   randomColor();
   $("#" + color[ranNum]).animate({ opacity: 0.5 }, 200, function () {
     $(this).animate({ opacity: 1 }, 200);
@@ -68,17 +68,17 @@ const getPressed = function (btn) {
   }, 300);
 };
 
-const randomColor = function () {
+const randomColor = () => {
   ranNum = Math.floor(Math.random() * 4);
   gamePattern.push(color[ranNum]);
 };
 
-const makeSound = function (color) {
+const makeSound = (color) => {
   let sound = new Audio("sounds/" + color + ".mp3");
   sound.play();
 };
 
-const restart = function () {
+const restart = () => {
   started = false;
   gamePattern = [];
   level = 0;
